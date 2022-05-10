@@ -1,4 +1,4 @@
-pymapsync
+syncimap
 =========
 
 IMAP sync tool
@@ -6,7 +6,6 @@ IMAP sync tool
 Copy emails and folders from an IMAP account to another.
 Creates missing folders and skips existing messages (using message-id).
 
-author Ivo Brhel <ivo.brhel at gmail.com>
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -37,7 +36,7 @@ Example: to synchronise imap account "test1" on "imap.server1"
                     delete messages on the destination imap server that are not on the source server                    
                     with SSL connect to source imap server                    
 
-pymapsync \\
+syncimap \\
         --ssl1 ---delete2 --expunge2 --exclude "^Public|^Koncept|^Kalend|^Kontakt" \\
         --host1 imap.server1 --user1 test1 --password1 secret1 \\
-        --host2 imap.server2 --user2 test2 --password2 secret2 \\
+        --host2 imap.server2 --user2 test2 --password2 secret2 
